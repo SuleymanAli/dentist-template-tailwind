@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-white: 255 255 255;
+  }
+
+  input {
+    @apply border;
+  }
+
+  @font-face {
+    font-family: 'Eudoxus Sans';
+    src: url('/assets/fonts/EudoxusSans/EudoxusSans-Bold.woff2') format('woff2'),
+      url('/assets/fonts/EudoxusSans/EudoxusSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Eudoxus Sans';
+    src: url('/assets/fonts/EudoxusSans/EudoxusSans-Medium.woff2')
+        format('woff2'),
+      url('/assets/fonts/EudoxusSans/EudoxusSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Eudoxus Sans';
+    src: url('/assets/fonts/EudoxusSans/EudoxusSans-Regular.woff2')
+        format('woff2'),
+      url('/assets/fonts/EudoxusSans/EudoxusSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .title-one {
+    @apply text-4xl font-bold leading-tight tracking-[-0.04rem] xl:text-[64px];
+  }
+
+  .title-two {
+    @apply text-4xl font-bold tracking-[-0.04rem] md:text-5xl md:leading-tight;
+  }
+
+  .title-three {
+    @apply text-xl font-bold tracking-tight;
+  }
+  .title-four {
+    @apply font-bold tracking-tight;
+  }
+
+  .paragraph-one {
+    @apply text-lg font-medium tracking-tight;
+  }
+
+  .paragraph-two {
+    @apply text-base font-medium leading-relaxed tracking-tight;
+  }
+
+  .tag {
+    @apply text-xs font-bold uppercase leading-relaxed tracking-[0.08rem] text-primary;
+  }
+}
+
+@layer components {
+  .card {
+    @apply my-4 h-full cursor-pointer rounded-4xl border border-[#1819451a] p-4 text-black-light transition hover:shadow-md sm:m-4 xl:m-0;
+
+    &__image {
+      @apply relative mb-6 w-full rounded-4xl;
+    }
+
+    &__title {
+      @apply title-three mb-2 text-black;
+    }
+
+    &__description {
+      @apply paragraph-two mb-4;
+    }
+
+    &__date {
+      @apply absolute top-4 left-4 flex h-14 w-14 flex-col items-center justify-center rounded-2xl bg-stone-100 p-2 text-center text-sm text-black;
+    }
+  }
+
+  .btn {
+    color: theme('colors.white.DEFAULT');
+    background-color: theme('colors.primary');
+
+    @apply rounded-xl px-6 py-3.5 text-lg font-bold;
+  }
+}
+
+@layer utilities {
+}

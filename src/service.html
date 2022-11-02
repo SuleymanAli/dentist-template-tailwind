@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
+  <body class="font text-lg text-secondary antialiased">
+    <!-- Header -->
+    <header class="container py-8 px-4 print:hidden">
+      <div class="flex flex-col items-center lg:flex-row">
+        <!-- Logo -->
+        <div class="basis-full lg:basis-1/4">
+          <a href="/" class="flex text-2xl font-extrabold">
+            <span class="mr-2">
+              <img src="assets/icons/logo.svg" alt="" />
+            </span>
+            <p>Dentalist.</p>
+          </a>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="mobile absolute top-8 right-5 lg:hidden">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <!-- Navigation -->
+        <nav
+          class="menu my-5 hidden basis-full md:justify-center lg:flex lg:basis-1/2"
+        >
+          <ul
+            class="flex flex-col space-y-5 text-center text-sm font-bold lg:flex-row lg:space-y-0"
+          >
+            <li class="mx-5">
+              <a href="/"> About Us </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> New Patient </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> Our Services </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> Contact Us </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- CTA -->
+        <div class="hidden basis-full lg:flex lg:basis-1/4">
+          <button class="btn ml-auto">Book appointment</button>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Hero -->
+    <section class="mb-36 bg-light-blue lg:mx-6 lg:rounded-3xl">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Hero: Content -->
+          <div
+            class="mx-4 mt-12 flex basis-full flex-col justify-center lg:mt-0 lg:basis-5/12 xl:mx-14"
+          >
+            <h1 class="title-one mb-8">Root canals</h1>
+            <p class="mb-8 xl:mb-16">
+              Root canals have gotten a bad reputation, but us dentists don’t
+              know why! These are the types of treatments that actually make you
+              feel better!
+            </p>
+            <div class="flex flex-wrap justify-between">
+              <div class="mr-3 mb-3 self-center">
+                <buttton class="btn block"> Book an appointment </buttton>
+              </div>
+            </div>
+          </div>
+          <!-- Hero: Image -->
+          <div class="mt-12 basis-full lg:mr-7 lg:basis-7/12">
+            <img
+              src="assets/image/service-hero.png"
+              class="mx-auto -mb-16"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Hero -->
+
+    <!-- Symptoms -->
+    <section
+      class="bg-light-violet mb-20 px-6 pt-24 xs:rounded-3xl sm:rounded-[48px] lg:mx-6"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mx-auto text-center lg:mb-20 xl:basis-8/12">
+            <div class="tag mb-4">SYMPTOMS</div>
+            <div class="title-two mb-6">
+              Sign and symptoms you need root canal
+            </div>
+            <div class="paragraph-one mb-6">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+              mockups.
+            </div>
+          </div>
+          <div class="mx-auto mb-16 flex flex-wrap xl:basis-8/12">
+            <div class="mb-6 md:px-5 lg:mb-20 lg:basis-1/2">
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <!-- 1.Icon -->
+                <span
+                  class="mb-4 flex h-20 w-20 justify-center self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4 lg:mb-0"
+                >
+                  <img src="assets/icons/feature/protect.svg" alt="" />
+                </span>
+                <!-- 1.Feature Content -->
+                <div class="shrink-[2]">
+                  <p class="title-three mb-2">Spontaneous pain</p>
+                  <p class="paragraph-two">
+                    Spontaneous pain even when you’re not eating or drinking
+                    Darkening or discoloration of a tooth
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 md:px-5 lg:mb-20 lg:basis-1/2">
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <!-- 2.Icon -->
+                <span
+                  class="mb-4 flex h-20 w-20 justify-center self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4 lg:mb-0"
+                >
+                  <img src="assets/icons/feature/hands.svg" alt="" />
+                </span>
+                <!-- 2.Feature Content -->
+                <div class="shrink-[2]">
+                  <p class="title-three mb-2">Discoloration of tooth</p>
+                  <p class="paragraph-two">
+                    Darkening or discoloration of a tooth
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 md:px-5 lg:mb-20 lg:basis-1/2">
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <!-- 3.Icon -->
+                <span
+                  class="mb-4 flex h-20 w-20 justify-center self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4 lg:mb-0"
+                >
+                  <img src="assets/icons/feature/chair.svg" alt="" />
+                </span>
+                <!-- 3.Feature Content -->
+                <div class="shrink-[2]">
+                  <p class="title-three mb-2">Middle night pain</p>
+                  <p class="paragraph-two">
+                    Pain that wakes you up in the middle of the night
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 md:px-5 lg:mb-20 lg:basis-1/2">
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <!-- 4.Icon -->
+                <span
+                  class="mb-4 flex h-20 w-20 justify-center self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4 lg:mb-0"
+                >
+                  <img src="assets/icons/feature/tooth.svg" alt="" />
+                </span>
+                <!-- 4.Feature Content -->
+                <div class="shrink-[2]">
+                  <p class="title-three mb-2">Tenderness in gums</p>
+                  <p class="paragraph-two">
+                    From floss bosses to sweet tooths, every mouth is welcome.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 md:px-5 lg:mb-20 lg:basis-1/2">
+              <div class="flex flex-col sm:flex-row sm:items-center">
+                <!-- 5.Icon -->
+                <span
+                  class="mb-4 flex h-20 w-20 justify-center self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4 lg:mb-0"
+                >
+                  <img src="assets/icons/feature/tooth.svg" alt="" />
+                </span>
+                <!-- 5.Feature Content -->
+                <div class="shrink-[2]">
+                  <p class="title-three mb-2">Extreme sensitivity</p>
+                  <p class="paragraph-two">
+                    Extreme sensitivity to cold or heat when your’e drink or eat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Symptoms -->
+
+    <!-- Gallery -->
+    <section class="container mb-36 lg:mb-48">
+      <p class="tag text-primary">GALLERY</p>
+      <div class="mb-28 flex flex-wrap">
+        <div class="sm:basis-5/12">
+          <h2 class="title-two">Some proof about our services for you</h2>
+        </div>
+        <div class="paragraph-one ml-auto text-black-light sm:basis-1/2">
+          Lorem ipsum is placeholder text commonly used in the graphic, print,
+          and publishing industries for previewing layouts and visual mockups.
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12">
+        <div class="h-[300px] lg:col-span-5">
+          <img
+            src="assets/image/gallery/image 31.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+        <div class="h-[300px] lg:col-span-3">
+          <img
+            src="assets/image/gallery/image 32.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+        <div class="h-[300px] lg:col-span-4">
+          <img
+            src="assets/image/gallery/image 33.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+        <div class="h-[300px] lg:col-span-3">
+          <img
+            src="assets/image/gallery/image 34.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+        <div class="h-[300px] lg:col-span-4">
+          <img
+            src="assets/image/gallery/image 35.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+        <div class="h-[300px] lg:col-span-5">
+          <img
+            src="assets/image/gallery/image 36.png"
+            class="h-full w-full rounded-2xl object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- /Gallery -->
+
+    <!-- Map And Book -->
+    <section class="container mb-24 lg:mb-36">
+      <div class="flex flex-wrap">
+        <div class="mb-12 basis-full lg:mb-0 lg:basis-1/2 lg:pr-8 xl:pr-24">
+          <div class="h-96 w-full overflow-hidden rounded-4xl lg:h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.6576418201116!2d32.85710231625917!3d39.90429677942795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f3eeb9320af%3A0x1518dd10f3b4c3c4!2sDr.%20Dt.%20Elmir%20Seyidli%2C%20Di%C5%9F%20Hekimi!5e0!3m2!1sen!2str!4v1667264285110!5m2!1sen!2str"
+              width="100%"
+              height="100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="ml-auto lg:basis-1/2">
+          <!-- Header -->
+          <div class="mb-16">
+            <div class="tag mb-4">BOOK APPOINTMENT</div>
+            <div class="title-two mb-6">Care at Dentalist is pleasure</div>
+            <p class="paragraph-one text-black/60">
+              Lorem ipsum is placeholder text commonly used in the graphic,
+              print, and publishing industries for previewing layouts and visual
+            </p>
+          </div>
+          <!-- Form -->
+          <form action="" class="flex flex-wrap">
+            <div
+              class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+            >
+              <label class="tag mb-2 uppercase text-black/60" for="">
+                Name
+              </label>
+              <input
+                type="text"
+                class="rounded-2xl p-4 text-sm"
+                placeholder="Enter your name..."
+              />
+            </div>
+            <div
+              class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+            >
+              <label class="tag p mb-2 uppercase text-black/60" for="">
+                emAIL aDDRESS
+              </label>
+              <input
+                type="text"
+                class="rounded-2xl p-4 text-sm"
+                placeholder="Your email address..."
+              />
+            </div>
+            <div
+              class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+            >
+              <label class="tag mb-2 uppercase text-black/60" for="">
+                sERVICES
+              </label>
+              <select
+                name=""
+                id=""
+                class="rounded-2xl border border-r-8 border-white p-4 text-sm outline outline-1 outline-[#e5e7eb]"
+              >
+                <option value="" selected disabled>Teeth Whitening</option>
+                <option value="">Test 1</option>
+                <option value="">Test 2</option>
+                <option value="">Test 3</option>
+              </select>
+            </div>
+            <div
+              class="mb-12 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+            >
+              <label class="tag mb-2 uppercase text-black/60" for="">
+                DEPARTMENT
+              </label>
+              <select
+                name=""
+                id=""
+                class="rounded-2xl border border-r-8 border-white p-4 text-sm outline outline-1 outline-[#e5e7eb]"
+              >
+                <option value="" selected disabled>Select Department</option>
+                <option value="">Test 1</option>
+                <option value="">Test 2</option>
+                <option value="">Test 3</option>
+              </select>
+            </div>
+            <div class="mb-6 flex basis-full flex-col">
+              <label class="tag mb-2 uppercase text-black/60" for="">
+                DEPARTMENT
+              </label>
+              <textarea
+                class="w-full rounded-2xl border p-4"
+                cols="10"
+                rows="5"
+                placeholder="Enter your messages..."
+              ></textarea>
+            </div>
+
+            <div class="flex w-full flex-wrap justify-between">
+              <div class="mb-6 flex items-center self-start xs:mb-0">
+                <span
+                  class="mr-4 rounded-2xl border-4 border-white/[0.2] bg-white p-3 outline outline-2 outline-primary"
+                >
+                  <img src="assets/icons/phone.svg" alt="" />
+                </span>
+                <div>
+                  <p
+                    class="text-xs font-bold uppercase tracking-wider text-primary"
+                  >
+                    Dental 24H Emergency
+                  </p>
+                  <p class="font-bold">03 482 394 123</p>
+                </div>
+              </div>
+
+              <div class="xs:ml-auto">
+                <buttton class="btn block text-lg">
+                  Book an appointment
+                </buttton>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- /Map And Book -->
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 text-white print:hidden">
+      <div class="container">
+        <div class="flex flex-col flex-wrap lg:flex-row">
+          <div class="mb-12 lg:basis-5/12">
+            <!-- Logo -->
+            <a href="/" class="mb-8 flex text-2xl font-extrabold">
+              <span class="mr-2">
+                <img src="assets/icons/logo.svg" alt="" />
+              </span>
+              <p>Dentalist.</p>
+            </a>
+            <!-- Description -->
+            <p class="mb-16 text-white-light">
+              Dental Care Seattle is a top-rated local practice for cosmetic,
+              preventative, and restorative dentistry on First Hill
+            </p>
+            <!-- Social -->
+            <div>
+              <p
+                class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white/60"
+              >
+                Follow Us On
+              </p>
+              <div class="flex items-center space-x-12">
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/fb.svg" alt="" />
+                  </a>
+                </span>
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/twitter.svg" alt="" />
+                  </a>
+                </span>
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/instagram.svg" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 lg:ml-auto lg:mb-0 lg:basis-2/12">
+            <p
+              class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white-light"
+            >
+              Quick Links
+            </p>
+            <nav class="list-none space-y-6 text-sm font-bold tracking-tight">
+              <li>
+                <a href="/"> About Us </a>
+              </li>
+              <li>
+                <a href="/"> Dental Services </a>
+              </li>
+              <li>
+                <a href="/"> Dentist </a>
+              </li>
+              <li>
+                <a href="/"> Blog </a>
+              </li>
+              <li>
+                <a href="/"> FAQs </a>
+              </li>
+            </nav>
+          </div>
+          <div class="space-y-8 lg:basis-4/12">
+            <p
+              class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white-light"
+            >
+              Contact & Information
+            </p>
+            <!-- Phone -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/phone.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Phone Number
+                </p>
+                <p class="font-bold">+088 123 654 987</p>
+              </div>
+            </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/time.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Open Hour
+                </p>
+                <p class="font-bold">09:00 AM - 18:00 PM</p>
+              </div>
+            </div>
+            <!-- Addrress -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/location.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Clinic Address
+                </p>
+                <p class="font-bold">35 West Dental Street California 1004</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between space-y-6 pt-24 pb-12 md:flex-row md:space-y-0"
+        >
+          <p class="text-base text-white/60">©Dentalist. All Right Reserved</p>
+          <nav class="flex list-none space-x-14 text-base">
+            <li>
+              <a href="/"> Terms of Use </a>
+            </li>
+            <li>
+              <a href="/"> Privacy Policy </a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

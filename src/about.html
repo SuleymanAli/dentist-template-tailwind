@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/scss/main.scss" />
+  </head>
+  <body class="font text-lg text-secondary antialiased">
+    <!-- Header -->
+    <header class="container py-8 px-4 print:hidden">
+      <div class="flex flex-col items-center lg:flex-row">
+        <!-- Logo -->
+        <div class="basis-full lg:basis-1/4">
+          <a href="/" class="flex text-2xl font-extrabold">
+            <span class="mr-2">
+              <img src="assets/icons/logo.svg" alt="" />
+            </span>
+            <p>Dentalist.</p>
+          </a>
+        </div>
+        <!-- Hamburger Button -->
+        <button class="mobile absolute top-8 right-5 lg:hidden">
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <!-- Navigation -->
+        <nav
+          class="menu my-5 hidden basis-full md:justify-center lg:flex lg:basis-1/2"
+        >
+          <ul
+            class="flex flex-col space-y-5 text-center text-sm font-bold lg:flex-row lg:space-y-0"
+          >
+            <li class="mx-5">
+              <a href="/"> About Us </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> New Patient </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> Our Services </a>
+            </li>
+            <li class="mx-5">
+              <a href="/"> Contact Us </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- CTA -->
+        <div class="hidden basis-full lg:flex lg:basis-1/4">
+          <button class="btn ml-auto">Book appointment</button>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Hero -->
+    <section class="lg:mx-6 lg:rounded-3xl">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row">
+          <!-- Hero: Content -->
+          <div
+            class="mx-4 mt-12 flex basis-full flex-col justify-center lg:mt-0 lg:basis-5/12 xl:mr-14"
+          >
+            <h1 class="title-one mb-8">About Us</h1>
+            <p class="mb-8 xl:mb-16">
+              We want you to feel amazing about your oral wellness. Not just
+              twice a year, but every time you take a bite, tell a joke, laugh,
+              or share a kiss.
+            </p>
+            <div class="flex flex-wrap justify-between">
+              <div class="mr-3 mb-3 self-center">
+                <buttton class="btn block xl:text-xl"> Contact Us </buttton>
+              </div>
+            </div>
+          </div>
+          <!-- Hero: Image -->
+          <div class="mt-12 ml-auto basis-full lg:mr-7 lg:basis-1/2">
+            <img src="assets/image/about-hero.png" class="mx-auto" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Hero -->
+
+    <!-- Two Column -->
+    <section class="container mt-12 mb-12 lg:mt-36 lg:mb-36">
+      <div class="flex flex-wrap">
+        <div class="basis-full lg:basis-5/12">
+          <!-- Image -->
+          <div
+            class="lg-mb-0 mb-6 h-full rounded-3xl lg:py-16 lg:pl-16 xl:w-3/5 xl:bg-sky-100"
+          >
+            <img
+              src="assets/image/about-us/male-female-dentist-examining-patient 1.png"
+              alt=""
+              class="rounded-2xl lg:max-w-fit lg:pl-4"
+            />
+          </div>
+        </div>
+        <div class="ml-auto basis-full lg:basis-1/2 lg:pl-16">
+          <div class="tag mb-4">OUR PRIORITY</div>
+          <div class="title-two mb-6">Our clients are our priority</div>
+          <div class="paragraph-one pb-4 lg:mb-16">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </div>
+          <div class="btn inline-flex">Book an appointment</div>
+        </div>
+      </div>
+    </section>
+    <!-- /Two Column -->
+
+    <!-- Features -->
+    <section
+      class="container mb-16 bg-light-purple px-6 pt-24 xs:rounded-3xl sm:rounded-[48px] lg:mb-72"
+    >
+      <div class="flex flex-wrap">
+        <div class="mx-auto text-center lg:mb-12 xl:basis-8/12">
+          <div class="tag mb-4">SAFETY</div>
+          <div class="title-two mb-6">We put the safety first</div>
+          <div class="paragraph-one mb-6">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </div>
+        </div>
+        <div class="mx-auto mb-16 flex h-60 flex-wrap xl:basis-8/12">
+          <img
+            src="assets/image/about-us/dental-cabinet-with-various-medical-equipment 1.png"
+            alt=""
+            class="rounded-2xl"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- /Features -->
+
+    <!-- Two Column -->
+    <section class="container mb-12 md:mb-36">
+      <div class="flex flex-wrap">
+        <div class="order-2 basis-full lg:order-1 lg:basis-1/2">
+          <div class="tag mb-4">EXPERTS IN DENTAL</div>
+          <div class="title-two mb-6">
+            Top-notch dentistry, from Seattle's top dentists.
+          </div>
+          <div class="paragraph-one pb-4 lg:mb-8">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-center">
+              <span class="mr-3">
+                <img src="assets/icons/checked.svg" alt="" />
+              </span>
+              Top quality dental team
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3">
+                <img src="assets/icons/checked.svg" alt="" />
+              </span>
+              State of the art dental services
+            </li>
+            <li class="flex items-center">
+              <span class="mr-3">
+                <img src="assets/icons/checked.svg" alt="" />
+              </span>
+              Discount on all dental treatment
+            </li>
+          </ul>
+        </div>
+
+        <div class="order-1 ml-auto basis-full lg:order-2 lg:basis-5/12">
+          <!-- Image -->
+          <div
+            class="lg-mb-0 relative mb-6 ml-auto h-full rounded-3xl lg:py-16 xl:w-3/5 xl:bg-violet-100 xl:pr-16"
+          >
+            <img
+              src="assets/image/home/young-asian-female-dentist-white-coat-posing-clinic-equipment 1.png"
+              alt=""
+              class="right-20 lg:max-w-fit lg:pl-4 xl:absolute"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Two Column -->
+
+    <!-- Team -->
+    <div class="container mb-20 pt-24 pb-12 xs:px-12 sm:pb-32 md:px-4 lg:px-12">
+      <!-- Team: Header -->
+      <div class="mb-16 flex flex-wrap items-center sm:mb-32 md:px-4 lg:px-16">
+        <div class="lg:basis-1/2">
+          <div class="tag">MEET OUR TEAM</div>
+          <div class="title-two mb-4">
+            Get to know the dentalist dental Team
+          </div>
+        </div>
+        <div class="ml-auto lg:basis-5/12">
+          <div class="paragraph-one">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </div>
+        </div>
+      </div>
+      <!-- Team: Body -->
+      <di
+        class="flex flex-wrap justify-center space-y-10 md:space-y-0 lg:flex-nowrap lg:space-x-10"
+      >
+        <div class="lg:basis-1/4">
+          <div class="mb-6 rounded-4xl bg-light-blue md:m-4 lg:m-0 lg:mb-6">
+            <img src="assets/image/team/Team1.png" alt="" />
+          </div>
+          <p class="title-four text-center">Dianne Russell</p>
+        </div>
+        <div class="lg:basis-1/4">
+          <div class="mb-6 rounded-4xl bg-light-purple md:m-4 lg:m-0 lg:mb-6">
+            <img src="assets/image/team/Team2.png" alt="" />
+          </div>
+          <p class="title-four text-center">Esther Howard</p>
+        </div>
+        <div class="lg:basis-1/4">
+          <div class="mb-6 rounded-4xl bg-light-pink md:m-4 lg:m-0 lg:mb-6">
+            <img src="assets/image/team/Team3.png" alt="" />
+          </div>
+          <p class="title-four text-center">Darrell Steward</p>
+        </div>
+        <div class="lg:basis-1/4">
+          <div class="mb-6 rounded-4xl bg-light-violet md:m-4 lg:m-0 lg:mb-6">
+            <img src="assets/image/team/Team4.png" alt="" />
+          </div>
+          <p class="title-four text-center">Jenny Wilson</p>
+        </div>
+      </di>
+    </div>
+    <!-- /Team -->
+
+    <!-- FAG -->
+    <section class="container mb-20 lg:mb-36" id="accordion">
+      <div class="mb-16 text-center">
+        <div class="tag mb-4">FAG</div>
+        <div class="title-two">Frequently asked question</div>
+      </div>
+      <div class="flex justify-center">
+        <div class="border-t-4 border-t-primary lg:basis-3/4">
+          <div class="border-b">
+            <!-- 1. Title -->
+            <a
+              class="accordion-toggle flex items-center justify-between p-3 md:p-10"
+              href="#content-1"
+            >
+              <p
+                class="pointer-events-none pr-4 text-base font-bold md:text-2xl"
+              >
+                Is there any cost or obligation if l request an offer?
+              </p>
+              <span
+                class="pointer-events-none shrink-0 cursor-pointer transition-all"
+              >
+                <img src="assets/icons/chevron-down.svg" alt="" />
+              </span>
+            </a>
+            <!-- 1. Body -->
+            <div
+              class="accordion-content max-h-0 w-4/5 overflow-hidden transition-all"
+              id="content-1"
+            >
+              <p class="px-4 pb-4 md:px-10 md:pb-10">
+                I see Coint being a long-term part of my business structure. Not
+                just for this business, but also our future endeavors.
+              </p>
+            </div>
+          </div>
+          <div class="border-b">
+            <!-- 2. Title -->
+            <a
+              class="accordion-toggle flex items-center justify-between p-3 md:p-10"
+              href="#content-2"
+            >
+              <p
+                class="pointer-events-none pr-4 text-base font-bold md:text-2xl"
+              >
+                What kind of construction services will be purchased?
+              </p>
+              <span
+                class="pointer-events-none shrink-0 cursor-pointer transition-all"
+              >
+                <img src="assets/icons/chevron-down.svg" alt="" />
+              </span>
+            </a>
+            <!-- 2. Body -->
+            <div
+              class="accordion-content max-h-0 max-h-64 w-4/5 overflow-hidden transition-all"
+              id="content-2"
+            >
+              <p class="px-4 pb-4 md:px-10 md:pb-10">
+                I see Coint being a long-term part of my business structure. Not
+                just for this business, but also our future endeavors.
+              </p>
+            </div>
+          </div>
+          <div class="border-b">
+            <!-- 3. Title -->
+            <a
+              href="#content-3"
+              class="accordion-toggle flex items-center justify-between p-3 md:p-10"
+            >
+              <p
+                class="pointer-events-none pr-4 text-base font-bold md:text-2xl"
+              >
+                How Do I Print My Auto Insurance ID Card?
+              </p>
+              <span
+                class="pointer-events-none shrink-0 cursor-pointer transition-all"
+              >
+                <img src="assets/icons/chevron-down.svg" alt="" />
+              </span>
+            </a>
+            <!-- 3. Body -->
+            <div
+              class="accordion-content max-h-0 w-4/5 overflow-hidden transition-all"
+              id="content-3"
+            >
+              <p class="px-4 pb-4 md:px-10 md:pb-10">
+                I see Coint being a long-term part of my business structure. Not
+                just for this business, but also our future endeavors.
+              </p>
+            </div>
+          </div>
+          <div class="border-b">
+            <!-- 4. Title -->
+            <a
+              href="#content-4"
+              class="accordion-toggle flex items-center justify-between p-3 md:p-10"
+            >
+              <p
+                class="pointer-events-none pr-4 text-base font-bold md:text-2xl"
+              >
+                How Do I Know What Deductible Applies To My Policy?
+              </p>
+              <span
+                class="pointer-events-none shrink-0 cursor-pointer transition-all"
+              >
+                <img src="assets/icons/chevron-down.svg" alt="" />
+              </span>
+            </a>
+            <!-- 4. Body -->
+            <div
+              class="accordion-content max-h-0 w-4/5 overflow-hidden transition-all"
+              id="content-4"
+            >
+              <p class="px-4 pb-4 md:px-10 md:pb-10">
+                I see Coint being a long-term part of my business structure. Not
+                just for this business, but also our future endeavors.
+              </p>
+            </div>
+          </div>
+          <div class="border-b">
+            <!-- 5. Title -->
+            <a
+              href="#content-5"
+              class="accordion-toggle flex max-h-64 items-center justify-between p-3 md:p-10"
+            >
+              <p
+                class="pointer-events-none pr-4 text-base font-bold md:text-2xl"
+              >
+                If I Am Moving, Will I Need To Request A New Agent?
+              </p>
+              <span
+                class="pointer-events-none shrink-0 cursor-pointer transition-all"
+              >
+                <img src="assets/icons/chevron-down.svg" alt="" />
+              </span>
+            </a>
+            <!-- 5. Body -->
+            <div
+              class="accordion-content max-h-0 w-4/5 overflow-hidden transition-all"
+              id="content-5"
+            >
+              <p class="px-4 pb-4 md:px-10 md:pb-10">
+                I see Coint being a long-term part of my business structure. Not
+                just for this business, but also our future endeavors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /FAG -->
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 text-white print:hidden">
+      <div class="container">
+        <div class="flex flex-col flex-wrap lg:flex-row">
+          <div class="mb-12 lg:basis-5/12">
+            <!-- Logo -->
+            <a href="/" class="mb-8 flex text-2xl font-extrabold">
+              <span class="mr-2">
+                <img src="assets/icons/logo.svg" alt="" />
+              </span>
+              <p>Dentalist.</p>
+            </a>
+            <!-- Description -->
+            <p class="mb-16 text-white-light">
+              Dental Care Seattle is a top-rated local practice for cosmetic,
+              preventative, and restorative dentistry on First Hill
+            </p>
+            <!-- Social -->
+            <div>
+              <p
+                class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white/60"
+              >
+                Follow Us On
+              </p>
+              <div class="flex items-center space-x-12">
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/fb.svg" alt="" />
+                  </a>
+                </span>
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/twitter.svg" alt="" />
+                  </a>
+                </span>
+                <span>
+                  <a href="/">
+                    <img src="assets/icons/social/instagram.svg" alt="" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 lg:ml-auto lg:mb-0 lg:basis-2/12">
+            <p
+              class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white-light"
+            >
+              Quick Links
+            </p>
+            <nav class="list-none space-y-6 text-sm font-bold tracking-tight">
+              <li>
+                <a href="/"> About Us </a>
+              </li>
+              <li>
+                <a href="/"> Dental Services </a>
+              </li>
+              <li>
+                <a href="/"> Dentist </a>
+              </li>
+              <li>
+                <a href="/"> Blog </a>
+              </li>
+              <li>
+                <a href="/"> FAQs </a>
+              </li>
+            </nav>
+          </div>
+          <div class="space-y-8 lg:basis-4/12">
+            <p
+              class="mb-6 text-xs font-bold uppercase leading-normal tracking-widest text-white-light"
+            >
+              Contact & Information
+            </p>
+            <!-- Phone -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/phone.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Phone Number
+                </p>
+                <p class="font-bold">+088 123 654 987</p>
+              </div>
+            </div>
+            <!-- Opening Hours -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/time.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Open Hour
+                </p>
+                <p class="font-bold">09:00 AM - 18:00 PM</p>
+              </div>
+            </div>
+            <!-- Addrress -->
+            <div class="flex flex-col sm:flex-row sm:items-center">
+              <span
+                class="self-start rounded-2xl border-8 border-white/[0.2] bg-white p-3 outline outline-1 outline-white sm:mr-4"
+              >
+                <img src="assets/icons/location.svg" alt="" />
+              </span>
+              <div>
+                <p
+                  class="mb-1 text-sm font-bold leading-loose tracking-tight text-white-light"
+                >
+                  Clinic Address
+                </p>
+                <p class="font-bold">35 West Dental Street California 1004</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between space-y-6 pt-24 pb-12 md:flex-row md:space-y-0"
+        >
+          <p class="text-base text-white/60">©Dentalist. All Right Reserved</p>
+          <nav class="flex list-none space-x-14 text-base">
+            <li>
+              <a href="/"> Terms of Use </a>
+            </li>
+            <li>
+              <a href="/"> Privacy Policy </a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
