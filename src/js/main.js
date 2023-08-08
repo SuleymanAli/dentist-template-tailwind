@@ -1,4 +1,4 @@
-import gsap from 'gsap'
+// import gsap from 'gsap'
 
 // grab everything we need
 const btn = document.querySelector('button.mobile')
@@ -10,35 +10,35 @@ btn.addEventListener('click', () => {
 })
 
 // console.log(gsap)
-console.clear()
-const items = document.querySelectorAll('.boxes__item')
+// console.clear()
+// const items = document.querySelectorAll('.boxes__item')
 
-items.forEach((item) => {
-  console.log(item.querySelector('.paragraph'))
-  const tl = gsap
-    .timeline({ paused: true })
-    .to(item.querySelector('.paragraph'), { color: 'purple' })
+// items.forEach((item) => {
+//   console.log(item.querySelector('.paragraph'))
+//   const tl = gsap
+//     .timeline({ paused: true })
+//     .to(item.querySelector('.paragraph'), { color: 'purple' })
 
-  item.addEventListener('mouseenter', () => tl.play())
-})
+//   item.addEventListener('mouseenter', () => tl.play())
+// })
 
-gsap.from('.boxes__item', {
-  duration: 2,
-  // x: () => 'random(-200, 200)',
-  y: -100,
-  // stagger: function (index, target, list) {
-  //   // your custom logic here. Return the delay from the start (not between each)
-  //   return index * 0.2
-  // },
-  backgroundColor: '#560563',
-  // ease: 'back.out',
-  // ease: 'elastic',
-  // ease: 'bounce',
-  // ease: 'expo.inOut',
-  // ease: 'sine.inOut',
-  // ease: 'back(6)',
-  // ease: 'linear.out',
-})
+// gsap.from('.boxes__item', {
+//   duration: 2,
+//   // x: () => 'random(-200, 200)',
+//   y: -100,
+//   // stagger: function (index, target, list) {
+//   //   // your custom logic here. Return the delay from the start (not between each)
+//   //   return index * 0.2
+//   // },
+//   backgroundColor: '#560563',
+//   // ease: 'back.out',
+//   // ease: 'elastic',
+//   // ease: 'bounce',
+//   // ease: 'expo.inOut',
+//   // ease: 'sine.inOut',
+//   // ease: 'back(6)',
+//   // ease: 'linear.out',
+// })
 
 /* Accordion */
 // Listen for click on the document
