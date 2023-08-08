@@ -59,8 +59,22 @@
           </ul>
         </nav>
         <!-- CTA -->
-        <div class="hidden basis-full lg:flex lg:basis-1/4">
-          <button class="btn ml-auto">Book appointment</button>
+        <div class="hidden basis-full lg:flex lg:justify-end lg:basis-1/4">
+          <!-- <button class="btn ml-auto">Book appointment</button> -->
+          <ul class="list-unstyled flex space-x-3" id="headerLanguage">
+            <li v-for="language in languages" :key="language.code">
+              <a
+                :href="`#googtrans(${defaultLanguage}|${language.code})`"
+                @click="changeLanguage(language.code)"
+              >
+                <img
+                  class="w-9"
+                  :src="`https://www.worldometers.info//img/flags/small/tn_${language.flag}-flag.gif`"
+                  :alt="language.name"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -820,5 +834,62 @@
     <!-- /Footer -->
 
     <script type="module" src="/js/main.js"></script>
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#headerLanguage',
+        data: () => ({
+          defaultLanguage: 'en',
+          languages: [
+            {
+              name: 'Türkçe',
+              code: 'tr', // 1. Language Codes      -> https://gist.github.com/JT5D/a2fdfefa80124a06f5a9
+              flag: 'tu', // 2. Language Flag URLs  -> https://www.kaggle.com/zhongtr0n/country-flag-urls
+            },
+            {
+              name: 'English',
+              code: 'en',
+              flag: 'us',
+            },
+            {
+              name: 'Українська',
+              code: 'uk',
+              flag: 'up',
+            },
+          ],
+        }),
+        mounted() {
+          this.loadGoogleTranslateScript()
+        },
+        methods: {
+          loadGoogleTranslateScript() {
+            const script = document.createElement('script')
+            script.src =
+              '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+            script.async = true
+            document.head.appendChild(script)
+            window.googleTranslateElementInit = () => {
+              new window.google.translate.TranslateElement(
+                {
+                  pageLanguage: this.defaultLanguage,
+                  layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                  autoDisplay: false,
+                },
+                'google_translate_element'
+              )
+            }
+          },
+          changeLanguage(lang) {
+            let googleTranslateComboBox =
+              document.querySelector('.goog-te-combo')
+            if (googleTranslateComboBox) {
+              googleTranslateComboBox.value = lang
+            }
+            window.location = `#googtrans(${this.defaultLanguage}\|${lang})`
+            location.reload()
+          },
+        },
+      })
+    </script>
   </body>
 </html>
