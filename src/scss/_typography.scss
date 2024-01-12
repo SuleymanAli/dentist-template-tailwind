@@ -1,0 +1,28 @@
+@layer base {
+  .title-one {
+    @apply text-4xl font-bold leading-tight tracking-[-0.04rem] xl:text-[64px];
+  }
+
+  .title-two {
+    @apply text-4xl font-bold tracking-[-0.04rem] md:text-5xl md:leading-tight;
+  }
+
+  .title-three {
+    @apply text-xl font-bold tracking-tight;
+  }
+  .title-four {
+    @apply font-bold tracking-tight;
+  }
+
+  .paragraph-one {
+    @apply text-lg font-medium tracking-tight;
+  }
+
+  .paragraph-two {
+    @apply text-base font-medium leading-relaxed tracking-tight;
+  }
+
+  .tag {
+    @apply text-xs font-bold uppercase leading-relaxed tracking-[0.08rem] text-primary;
+  }
+}
