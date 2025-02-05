@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/scss/main.scss" />
   </head>
-  <body class="font text-lg text-secondary antialiased">
+  <body class="font text-lg text-secondary antialiased" id="container">
     <!-- Header -->
     <header class="container py-8 px-4 print:hidden">
       <div class="flex flex-col items-center lg:flex-row">
@@ -45,16 +45,13 @@
             class="flex flex-col space-y-5 text-center text-sm font-bold lg:flex-row lg:space-y-0"
           >
             <li class="mx-5">
-              <a href="/"> About Us </a>
+              <a href="/about.html"> About Us </a>
             </li>
             <li class="mx-5">
-              <a href="/"> New Patient </a>
+              <a href="/service.html"> Our Services </a>
             </li>
             <li class="mx-5">
-              <a href="/"> Our Services </a>
-            </li>
-            <li class="mx-5">
-              <a href="/"> Contact Us </a>
+              <a href="/contact.html"> Contact Us </a>
             </li>
           </ul>
         </nav>
@@ -67,10 +64,10 @@
     <!-- /Header -->
 
     <!-- Features -->
-    <section
-      class="container mb-16 bg-light-blue px-6 pt-24 xs:rounded-3xl sm:rounded-[48px] lg:mb-96"
-    >
-      <div class="flex flex-wrap">
+    <section class="container">
+      <div
+        class="mb-16 md:bg-light-blue md:px-6 md:pt-24 xs:rounded-3xl sm:rounded-[48px] lg:mb-96 flex flex-wrap"
+      >
         <div class="mx-auto text-center lg:mb-12 xl:basis-8/12">
           <div class="title-two mb-6">Contact Us</div>
           <div class="paragraph-one mb-6">
@@ -78,12 +75,12 @@
             and publishing industries for previewing layouts and visual mockups.
           </div>
         </div>
-        <div class="mx-auto mb-16 flex h-80 flex-wrap xl:basis-8/12">
+        <div class="mx-auto mb-16 flex lg:h-80 flex-wrap xl:basis-8/12">
           <div class="rounded-4xl bg-white shadow-2xl">
             <!-- Form -->
-            <form action="" class="flex flex-wrap p-20">
+            <form action="" class="flex flex-wrap p-8 md:p-20">
               <div
-                class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+                class="mb-6 flex basis-full flex-col md:basis-1/2 md:odd:pr-4 md:even:pl-5"
               >
                 <label class="tag mb-2 uppercase text-black/60" for="">
                   Name
@@ -95,7 +92,7 @@
                 />
               </div>
               <div
-                class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+                class="mb-6 flex basis-full flex-col md:basis-1/2 md:odd:pr-4 md:even:pl-5"
               >
                 <label class="tag p mb-2 uppercase text-black/60" for="">
                   emAIL aDDRESS
@@ -107,7 +104,7 @@
                 />
               </div>
               <div
-                class="mb-6 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+                class="mb-6 flex basis-full flex-col md:basis-1/2 md:odd:pr-4 md:even:pl-5"
               >
                 <label class="tag mb-2 uppercase text-black/60" for="">
                   sERVICES
@@ -124,7 +121,7 @@
                 </select>
               </div>
               <div
-                class="mb-12 flex basis-full flex-col xs:basis-1/2 xs:odd:pr-4 xs:even:pl-5"
+                class="mb-12 flex basis-full flex-col md:basis-1/2 md:odd:pr-4 md:even:pl-5"
               >
                 <label class="tag mb-2 uppercase text-black/60" for="">
                   DEPARTMENT
